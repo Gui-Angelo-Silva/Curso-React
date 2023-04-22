@@ -2,8 +2,7 @@ import './index.css'
 import ReactDOM from 'react-dom' //o nome para o import é algo que queira 
 import React from 'react' //o import do react tem q ser chamado assim 
 
-import Primeiro from './components/basicos/Primeiro'
-import ComParametro from './components/basicos/ComParametro'
+import App from './App'
 
 //const el = document.getElementById('root')
 
@@ -15,12 +14,6 @@ import ComParametro from './components/basicos/ComParametro'
 )*/
 
 ReactDOM.render(
-    <div>
-        <Primeiro></Primeiro>
-        <ComParametro 
-            titulo='Situação do Aluno' 
-            aluno='Guilherme Silva' 
-            nota ={9.3}/>
-    </div>, 
+    <App></App>,
     document.getElementById('root')
 )
