@@ -3,8 +3,10 @@ import React from 'react'
 
 import Card from './components/layout/Card';
 
-import TabelaProdutos from './components/Repeticao/TabelaProdutos';
-import ListaAlunos from './components/Repeticao/ListaAlunos';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import ListaAlunos from './components/repeticao/ListaAlunos';
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import NumAleatorio from './components/basicos/NumAleatorio';
@@ -17,6 +19,14 @@ export default () => (
         <h1>Fundamentos React</h1>
 
         <div className='Cards'>
+            <Card
+                titulo='#08 - Renderização Condicional' color='#982395'>
+                <ParOuImpar numero={20}></ParOuImpar>
+                <UsuarioInfo usuario={{ nome: 'Fernando' }}></UsuarioInfo>
+                {/*<UsuarioInfo usuario={{}}></UsuarioInfo>
+                <UsuarioInfo></UsuarioInfo>*/}
+            </Card>
+
             <Card
                 titulo='#07 - Desafio Repetição' color='#3A9AD9'>
                 <TabelaProdutos></TabelaProdutos>
